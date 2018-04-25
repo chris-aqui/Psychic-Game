@@ -1,5 +1,5 @@
 {
-  "name": "word-guess-game",
+  "name": "Psychic-Game-Basic-Game",
   "version": "1.0.0",
   "description": "week3-hw",
   "main": "script.js",
@@ -19,5 +19,9 @@
   "dependencies": {
     "animate.css": "^3.6.1",
     "live-server": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
   }
 }
