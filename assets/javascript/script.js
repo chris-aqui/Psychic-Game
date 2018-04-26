@@ -14,14 +14,6 @@ var numLeft = 6 ;
 //
 //
 //                    Some DOM mods   ///
-var winMessage = '<p> Player wins: ' + winCount +'</p>';
-document.querySelector("#wins").innerHTML = winMessage;
-//
-var loseMessage = '<p> Player loses: ' + lostCount +'</p>';
-document.querySelector("#loses").innerHTML = loseMessage;
-//
-var leftMessage = '<p> # of guesses left: ' + numLeft +'</p>';
-document.querySelector("#left").innerHTML = leftMessage;
 //
 // H                  Hll of Functions //
 //
@@ -35,6 +27,7 @@ function computerGuess(letta) {
 //
 function letterChecker(userGues) {
   var randomletter = computerGuess(letter);
+
   for (var i = 0; i < letter.length; i++) {
     if (randomletter === userGues) {
       winCount +=1;
@@ -43,7 +36,7 @@ function letterChecker(userGues) {
       return winCount;
     } else {
       lostCount += 1;
-      console.log('Player win: ' + lostCount);
+      console.log('Player lose: ' + lostCount);
       //
       var compText = "<h3>Computer Guess was: " + randomletter + "</h3>";
       document.querySelector("#compGuess").innerHTML = compText;
@@ -63,6 +56,19 @@ document.onkeyup = function (event) {
 
   // call the function and pass in UserGuess
   letterChecker(userGuess);
+  var winMessage = '<p> Player wins: ' + winCount +'</p>';
+  // document.querySelector("#wins").innerHTML = winMessage;
+  $("#wins").html(winMessage);
+  //
+  var loseMessage = '<p> Player loses: ' + lostCount +'</p>';
+  // document.querySelector("#loses").innerHTML = loseMessage;
+  $("#loses").html(loseMessage);
+  //
+  var leftMessage = '<p> # of guesses left: ' + numLeft +'</p>';
+  // document.querySelector("#left").innerHTML = leftMessage;
+  $("#left").html(leftMessage);
 }
 
 
+// Notes to self.... function should always have a return...
+// dont forget that again.
