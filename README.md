@@ -4,7 +4,7 @@
 
 ### Overview:
 In this assignment, you'll create one of two possible computer games: 
-Word Guess or Psychic. These apps will run in the browser, 
+Word Guess or Psychic. These apps will run in the browser,  
 and feature dynamically updated HTML and CSS powered by your JavaScript code.
 ---
 1. You're going to make a game just like the one in the video. Essentially, the app randomly picks a letter, and the user has to guess which letter the app chose. Put the following text on your page:
@@ -15,3 +15,5 @@ and feature dynamically updated HTML and CSS powered by your JavaScript code.
 6. Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
 7. When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
 8. When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
+
+[Live Preview Here](https://christine-aqui.github.io/Psychic-Game/)
