@@ -1,6 +1,6 @@
 # Psychic-Game
 
-<img src="/psychic game.PNG" width="400" height="300" />
+<img src="/psychic game.PNG"/>
 
 ## JavaScript Assignment
 
