@@ -18,7 +18,7 @@
   "homepage": "https://github.com/christine-aqui/Word-Guess-Game#readme",
   "dependencies": {
     "animate.css": "^3.6.1",
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.2"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
